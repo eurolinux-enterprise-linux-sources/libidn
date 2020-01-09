@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<refentry id="libidn-signature">
+<refmeta>
+<refentrytitle role="top_of_page" id="libidn-signature.top_of_page">signature</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBIDN Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>signature</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="libidn-signature.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>#define             <link linkend="SIGNATURE-CHECK:CAPS">SIGNATURE_CHECK</link>                     (fn, ret, args)
+#define             <link linkend="SIGNATURE-CHECK1:CAPS">SIGNATURE_CHECK1</link>                    (fn, ret, args, id)
+#define             <link linkend="SIGNATURE-CHECK2:CAPS">SIGNATURE_CHECK2</link>                    (fn, ret, args, id)
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 id="libidn-signature.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+</para>
+</refsect1>
+<refsect1 id="libidn-signature.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="SIGNATURE-CHECK:CAPS" role="macro">
+<title>SIGNATURE_CHECK()</title>
+<indexterm zone="SIGNATURE-CHECK:CAPS"><primary>SIGNATURE_CHECK</primary></indexterm>
+<programlisting>#define             SIGNATURE_CHECK(fn, ret, args)</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>fn</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>ret</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>args</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="SIGNATURE-CHECK1:CAPS" role="macro">
+<title>SIGNATURE_CHECK1()</title>
+<indexterm zone="SIGNATURE-CHECK1:CAPS"><primary>SIGNATURE_CHECK1</primary></indexterm>
+<programlisting>#define             SIGNATURE_CHECK1(fn, ret, args, id)</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>fn</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>ret</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>args</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>id</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="SIGNATURE-CHECK2:CAPS" role="macro">
+<title>SIGNATURE_CHECK2()</title>
+<indexterm zone="SIGNATURE-CHECK2:CAPS"><primary>SIGNATURE_CHECK2</primary></indexterm>
+<programlisting>#define             SIGNATURE_CHECK2(fn, ret, args, id)</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>fn</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>ret</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>args</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>id</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+
+</refentry>
