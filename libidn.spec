@@ -1,12 +1,16 @@
 Summary: Internationalized Domain Name support library
 Name: libidn
 Version: 1.28
-Release: 1%{?dist}
+Release: 4%{?dist}
 URL: http://www.gnu.org/software/libidn/
 License: LGPLv2+ and GPLv3+ and GFDL
 Source0: http://ftp.gnu.org/gnu/libidn/libidn-%{version}.tar.gz
 Group: System Environment/Libraries
 BuildRequires: pkgconfig, gettext
+%ifarch ppc64le
+# libtool automatic fixing tool will touch things
+BuildRequires: autoconf
+%endif
 Requires(post): /sbin/install-info /sbin/ldconfig
 Requires(preun): /sbin/install-info
 Requires(postun): /sbin/ldconfig
@@ -55,6 +59,12 @@ mv iconv.tmp doc/libidn.info
 # remove RPATH hardcoding
 sed -i 's|^hardcode_libdir_flag_spec=.*|hardcode_libdir_flag_spec=""|g' libtool
 sed -i 's|^runpath_var=LD_RUN_PATH|runpath_var=DIE_RPATH_DIE|g' libtool
+
+%ifarch ppc64le
+# ppc64le libtool fixing tool might have tweaked libtool.m4.
+# Touch these files so aclocal-1.14 is not needed.
+touch aclocal.m4 Makefile.in configure
+%endif
 
 make %{?_smp_mflags} V=1
 
@@ -112,6 +122,15 @@ fi
 %{_emacs_sitelispdir}/%{name}
 
 %changelog
+* Fri Aug 22 2014 Miroslav Lichvar <mlichvar@redhat.com> - 1.28-4
+- fix building on ppc64le (#1125577)
+
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.28-3
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.28-2
+- Mass rebuild 2013-12-27
+
 * Thu Jul 18 2013 Miroslav Lichvar <mlichvar@redhat.com> - 1.28-1
 - update to 1.28
 - remove RPATH hardcoding
