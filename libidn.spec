@@ -1,7 +1,7 @@
 Summary: Internationalized Domain Name support library
 Name: libidn
 Version: 1.28
-Release: 3%{?dist}
+Release: 1%{?dist}
 URL: http://www.gnu.org/software/libidn/
 License: LGPLv2+ and GPLv3+ and GFDL
 Source0: http://ftp.gnu.org/gnu/libidn/libidn-%{version}.tar.gz
@@ -112,12 +112,6 @@ fi
 %{_emacs_sitelispdir}/%{name}
 
 %changelog
-* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.28-3
-- Mass rebuild 2014-01-24
-
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.28-2
-- Mass rebuild 2013-12-27
-
 * Thu Jul 18 2013 Miroslav Lichvar <mlichvar@redhat.com> - 1.28-1
 - update to 1.28
 - remove RPATH hardcoding
